@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Space+Grotesk:wght@400;500&display=swap');
+
+.App{
+  background-color: #1b1f24;
+}
+.d-flex .text-center .dispaly_2{
+  color:#fff!important;
+  font-size:50px!important;
+  line-height: 1.132em!important;
+  font-weight: 700!important;
+  background-image: linear-gradient(90deg, #bd10c3, #cd1590 29%, #d2177e 58%, #f3a3a3);
+  -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.d-flex .text-center .dispaly_3{
+  color:rgba(255, 255, 255, 0.718)!important;
+  font-size:25px!important;
+  line-height: 1.132em!important;
+  font-weight: 700!important;
+}
+
+hr{
+  color: #fff;
+}
+.dispaly_4{
+  color: #fff;
+}
+.dispaly_4 span{
+color: #075fe4;
+}
+.sub-title{
+  background-image: linear-gradient(90deg, #bd10c3, #cd1590 29%, #d2177e 58%, #f3a3a3);
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+  margin-bottom: 24px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.sub-title span{
+  color: #075fe4!important;
+}
+.dispaly_2{
+  color:#fff!important;
+  font-size:40px!important;
+  line-height: 1.142em!important;
+  font-weight: 700!important;
+}
+
+li{
+  list-style: none;
+  padding: 0px 20px;
+}
+.d-inline-flex li .linkedin,.github,.insta{
+  color: #fff;
+  font-size: 30px;
+}
+
+.text-200{
+
+  text-transform: uppercase;
+  color:#fff;
+  margin-bottom: 30px;
+}
+.d-inline-flex li .linkedin:hover{
+  color:#0e76a8;
+  background-color: #fff;
+  -webkit-background-clip: text; 
+}
+.d-inline-flex li .github:hover{
+  color:#4078c0;
+  background-color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+.d-inline-flex li .insta:hover{
+  color:#E1306C;
+}
+a.link{
+  text-transform: capitalize;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color:rgba(255,255,255,.55);
+}
+a.active{
+  color: pink;
+ 
+}
+.box{
+  border-radius:50%;
+  transition: all 3s linear;
+  animation: myfirst 5s linear 0s infinite alternate;
+}
+
+@keyframes myfirst{
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(-40px);
+  }
+}
+
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #45caff 0%, #ff1b6b 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  
+}
+
+.icons{
+  font-size:70px;
+  color: rgba(255, 255, 255, 0.589);
+  margin-bottom: 20px;
+}
+.card{
+  /* background-image: linear-gradient(to right,pink,rgba(0, 0, 255, 0.583)); */
+  background-image: linear-gradient(90deg, #bd10c3, #cd1590 29%, #d2177e 58%, #f3a3a3);
+}
+.card .card-title{
+ color: rgba(255, 255, 255, 0.615);
+}
+a{
+  text-decoration: none!important;
+  color: #1b1f24;
+}
+.card{
+  transition: all .5s linear;
+}
+.card:hover{
+  transform: translateX(0px) translateY(-10px);
+}
+.navbar-dark .navbar-brand a{
+  color: #fff!important;
+}
+.form-label{
+  color:#fff;
+}
+button.slick-arrow.slick-next,button.slick-arrow.slick-prev{
+  display: none!important;
+}
+
+@media (max-width:600px){
+  .d-flex .text-center .dispaly_2{
+    font-size:31px!important;
+  }
+}
+
+
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #ef32d9 0%, #89fffd  51%, #ef32d9  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 3px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: 800;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
